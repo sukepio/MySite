@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #ec715f;
+  height: 70px;
+  
+}
+
+.header-container {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo img {
+  height: 70px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-list-item {
+  list-style: none;
+  padding: 0 30px;
+  line-height: 70px;
+}
+
+.menu-list-item a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fafafa;
+  cursor: pointer;
+}
