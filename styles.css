@@ -22,10 +22,6 @@ header {
   height: 70px;
 }
 
-.fa-bars {
-  display: none;
-  font-size: 50px;
-}
 
 .menu-list {
   display: flex;
@@ -54,6 +50,12 @@ header {
   background-size: cover;
   background-position: bottom;
   padding-top: 200px;
+  text-align: center;
+}
+
+.mv-container {
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .main-visual-heading {
@@ -106,6 +108,7 @@ header {
 .portfolio-images {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .portfolio-images .img {
@@ -167,6 +170,7 @@ header {
 .feature-boxes {
   width: 980px;
   display: flex;
+  margin: 0 auto;
 }
 
 .feature-box {
@@ -214,18 +218,20 @@ header {
 }
 
 .img-box {
-  width: 512px;
+  width: 50%;
   text-align: center;
 }
 
-.profile-img {
+.my-face {
   height: 250px;
   width: 250px;
+  margin: 0 auto;
   border-radius: 50%;
+  background-image: url("img/my-icon.jpg");
 }
 
 .profile-introduction {
-  width: 512px;
+  width: 50%;
 }
 
 .profile-introduction-heading {
@@ -251,7 +257,7 @@ header {
 }
 
 .left-box {
-  width: 400px;
+  width: 50%;
   display: flex;
   justify-content: center;
 }
@@ -272,7 +278,7 @@ header {
 }
 
 .right-box {
-  width: 400px;
+  width: 50%;
   display: flex;
   justify-content: center;
 }
@@ -303,11 +309,10 @@ footer {
 }
 /* フッターここまで */
 
-@media screen and (max-width: 767px) {
-  body {
-    width: 90%;
-  }
+/* レスポンシブここから */
+@media screen and (max-width: 768px) {
 
+  /* ヘッダーここから */
   header {
     height: 50px;
   }
@@ -320,20 +325,37 @@ footer {
     height: 50px;
   }
 
-  .fa-bars {
-    display: inline-block;
+  #menu {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    margin: 5px 0;
+  }
+
+  .menu-bar {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    display: block;
+    margin: 5px auto;
+  }
+
+  .menu-bar:first-child {
+    margin-top: 10px;
   }
 
   .menu {
     display: none;
   }
+  /* ヘッダーここまで */
 
+  /* メインヴィジュアルここから */
   .main-visual-container {
-    width: 90%;
-    height: 650px;
     background-image: url("img/code.png");
-    background-size: cover;
-    background-position: bottom;
+  }
+
+  .mv-container {
+    width: 90%;
   }
 
   .main-visual-heading {
@@ -348,13 +370,16 @@ footer {
     color: #fafafa;
     text-align: center;
   }
+  /* メインヴィジュアルここまで */
 
+  /* ポートフォリオここから */
   .portfolio-contents {
     width: 90%;
   }
 
   .portfolio-images {
     display: block;
+    width: 300px;
   }
 
   .portfolio-images .img {
@@ -367,21 +392,24 @@ footer {
   .portfolio-images .img:nth-child(4) {
     margin-bottom: 10px;
   }
+  /* ポートフォリオここまで */
 
+  /* 特徴ここから */
   .feature {
     width: 90%;
   }
 
   .feature-boxes {
-    width: 90%;
+    width: 320px;
     display: block;
-    margin: 0 auto;
   }
 
   .feature-box .fas {
     margin-top: 10px;
   }
+  /* 特徴ここまで */
 
+  /* プロフィールここから */
   .profile-contents {
     width: 90%;
   }
@@ -390,10 +418,20 @@ footer {
     display: block;
   }
 
-  .profile-introduction {
-    text-align: center;
+  .img-box {
+    width: 100%;
   }
 
+  .profile-introduction-heading:first-child {
+    margin-top: 20px;
+  }
+  .profile-introduction {
+    text-align: center;
+    width: 100%;
+  }
+  /* プロフィールここまで */
+
+  /* コンタクトここから */
   .contact {
     width: 90%;
   }
@@ -404,6 +442,7 @@ footer {
 
   .left-box {
     display: block;
+    width: 100%;
   }
 
   .contact-detail-box {
@@ -412,6 +451,7 @@ footer {
 
   .right-box {
     display: block;
+    width: 100%;
   }
 
   .sns-heading {
@@ -421,4 +461,6 @@ footer {
   .fa-facebook-f, .fa-twitter, .fa-instagram {
     margin-right: 8px;
   }
+  /* コンタクトここまで */
 }
+/* レスポンシブここまで */
