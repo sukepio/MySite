@@ -81,7 +81,7 @@ header {
   text-align: center;
 }
 
-.portfolio-heading {
+.content-heading {
   font-size: 32px;
   color: #000;
 }
@@ -93,15 +93,15 @@ header {
   margin: 8px auto 30px;
 }
 
-.portfolio-text {
+.content-text {
   font-size: 16px;
   color: #000;
+  margin-bottom: 30px;
 }
 
 .portfolio-images {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
 }
 
 .portfolio-images .img {
@@ -151,3 +151,39 @@ header {
   margin-bottom: 0;
 }
 /* ポートフォリオここまで */
+
+.feature {
+  width: 980px;
+  margin: 0 auto;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.feature-boxes {
+  width: 980px;
+  display: flex;
+}
+
+.feature-box {
+  width: 320px;
+  margin-right: 10px;
+}
+
+.feature-box:last-child {
+  margin-right: 0;
+}
+
+.fas {
+  font-size: 60px;
+}
+
+.feature-box-heading {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.feature-box-text {
+  font-size: 16px;
+  color: #000;
+  text-align: start;
+}
