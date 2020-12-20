@@ -9,7 +9,6 @@ header {
   width: 100%;
   background-color: #ec715f;
   height: 70px;
-  
 }
 
 .header-container {
@@ -21,6 +20,11 @@ header {
 
 .header-logo img {
   height: 70px;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 50px;
 }
 
 .menu-list {
@@ -174,7 +178,7 @@ header {
   margin-right: 0;
 }
 
-.fas {
+.feature-box .fas {
   font-size: 60px;
 }
 
@@ -298,3 +302,123 @@ footer {
   color: #fafafa;
 }
 /* フッターここまで */
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 90%;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+
+  .header-logo img {
+    height: 50px;
+  }
+
+  .fa-bars {
+    display: inline-block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .main-visual-container {
+    width: 90%;
+    height: 650px;
+    background-image: url("img/code.png");
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .main-visual-heading {
+    font-size: 40px;
+    color: #fafafa;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .main-visual-container p {
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+  }
+
+  .portfolio-contents {
+    width: 90%;
+  }
+
+  .portfolio-images {
+    display: block;
+  }
+
+  .portfolio-images .img {
+    margin-right: 0;
+  }
+
+  .portfolio-images .img:nth-child(odd) {
+    display: none;
+  }
+  .portfolio-images .img:nth-child(4) {
+    margin-bottom: 10px;
+  }
+
+  .feature {
+    width: 90%;
+  }
+
+  .feature-boxes {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .feature-box .fas {
+    margin-top: 10px;
+  }
+
+  .profile-contents {
+    width: 90%;
+  }
+
+  .profile-box {
+    display: block;
+  }
+
+  .profile-introduction {
+    text-align: center;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .contact-box {
+    display: block;
+  }
+
+  .left-box {
+    display: block;
+  }
+
+  .contact-detail-box {
+    text-align: center;
+  }
+
+  .right-box {
+    display: block;
+  }
+
+  .sns-heading {
+    text-align: center;
+  }
+
+  .fa-facebook-f, .fa-twitter, .fa-instagram {
+    margin-right: 8px;
+  }
+}
