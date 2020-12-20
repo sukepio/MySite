@@ -233,3 +233,52 @@ header {
   padding-bottom: 20px;
 }
 /* プロフィールここまで */
+
+/* コンタクトここから */
+.contact {
+  width: 800px;
+  margin: 90px auto;
+  text-align: center;
+}
+
+.contact-box {
+  display: flex;
+  text-align: center;
+}
+
+.left-box {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-detail-box {
+  text-align: start;
+}
+
+.contact-detail-heading {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.contact-detail-text {
+  padding-bottom: 20px;
+}
+
+.right-box {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.sns-heading {
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-align: start;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+  font-size: 50px;
+  margin-right: 20px;
+}
+/* コンタクトここまで */
