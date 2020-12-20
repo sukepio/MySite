@@ -72,7 +72,7 @@ header {
   background-color: #eceff1;
 }
 
-.contents {
+.portfolio-contents {
   width: 920px;
   margin: 0 auto;
 }
@@ -152,6 +152,7 @@ header {
 }
 /* ポートフォリオここまで */
 
+/* 特徴ここから */
 .feature {
   width: 980px;
   margin: 0 auto;
@@ -187,3 +188,48 @@ header {
   color: #000;
   text-align: start;
 }
+/* 特徴ここまで */
+
+/* プロフィールここから */
+.profile {
+  background-color: #eceff1;
+  padding: 90px 0;
+}
+
+.profile-contents {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.profile-content {
+  text-align: center;
+}
+
+.profile-box {
+  display: flex;
+}
+
+.img-box {
+  width: 512px;
+  text-align: center;
+}
+
+.profile-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.profile-introduction {
+  width: 512px;
+}
+
+.profile-introduction-heading {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.profile-introduction-text {
+  padding-bottom: 20px;
+}
+/* プロフィールここまで */
