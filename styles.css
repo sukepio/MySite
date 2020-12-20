@@ -263,6 +263,8 @@ header {
 
 .contact-detail-text {
   padding-bottom: 20px;
+  display: inline-block;
+  color: black;
 }
 
 .right-box {
@@ -282,3 +284,17 @@ header {
   margin-right: 20px;
 }
 /* コンタクトここまで */
+
+/* フッターここから */
+footer {
+  height: 60px;
+  text-align: center;
+  background-color: #ec715f;
+  line-height: 60px;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #fafafa;
+}
+/* フッターここまで */
